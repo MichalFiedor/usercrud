@@ -24,7 +24,6 @@
 <body id="page-top">
 
   <%@include file="/jsp/header.jsp"%>
-  <div class="container-fluid">
 
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
