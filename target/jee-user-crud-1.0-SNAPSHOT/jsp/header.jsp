@@ -1,9 +1,3 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<html>
-
-<body id="page-top">
-
 <!-- Page Wrapper -->
 <div id="wrapper">
 
@@ -87,11 +81,3 @@
             <!-- End of Topbar -->
             <div class="container-fluid">
 
-                <!-- Page Heading -->
-                <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                    <h1 class="h1 mb-0 text-gray-800">UsersCrud</h1>
-                    <a href="http://localhost:8080/user/add" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                            class="fas fa-download fa-sm text-white-50"></i>Dodaj użytkownika</a>
-                </div>
-</body>
-</html>

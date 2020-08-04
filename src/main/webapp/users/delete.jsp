@@ -25,11 +25,18 @@
 <div class="container-fluid">
 
   <%@include file="/jsp/header.jsp"%>
+    <!-- Page Heading -->
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+      <h1 class="h1 mb-0 text-gray-800">UsersCrud</h1>
+      <a href="http://localhost:8080/user/add" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+              class="fas fa-download fa-sm text-white-50"></i>Add user</a>
+    </div>
+
   <form method="post" action="/user/delete">
     <input type="hidden" name="id" value="${id}"/>
-    <h3>Na pewno chcesz usunąć dane użytkownika o id ${id}</h3>
-    <button type="submit" class="btn btn-primary" name="decision" value="yes">Tak</button>
-    <button type="submit" class="btn btn-primary" name="decision" value="no">Nie</button>
+    <h3>Are you sure to delete user ${id}?</h3>
+    <button type="submit" class="btn btn-primary" name="decision" value="yes">Yes</button>
+    <button type="submit" class="btn btn-primary" name="decision" value="no">No</button>
   </form>
   <%@include file="/jsp/footer.jsp"%>
 

@@ -1,16 +1,3 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<html>
-<body>
-    <!-- Footer -->
-    <footer class="sticky-footer bg-white">
-        <div class="container my-auto">
-            <div class="copyright text-center my-auto">
-                <span>Copyright &copy; Your Website 2020</span>
-            </div>
-        </div>
-    </footer>
-    <!-- End of Footer -->
 
 </div>
 <!-- End of Content Wrapper -->
@@ -59,5 +46,3 @@
 <!-- Page level custom scripts -->
 <script src="../src/main/webapp/them/js/demo/chart-area-demo.js"></script>
 <script src="../src/main/webapp/them/js/demo/chart-pie-demo.js"></script>
-</body>
-</html>

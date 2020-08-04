@@ -25,10 +25,16 @@
 
   <%@include file="/jsp/header.jsp"%>
 
+  <!-- Page Heading -->
+  <div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h1 mb-0 text-gray-800">UsersCrud</h1>
+    <a href="http://localhost:8080/user/add" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+            class="fas fa-download fa-sm text-white-50"></i>Add user</a>
+  </div>
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
       <div class="card-header py-3">
-        <h6 class="m-0 font-weight-bold text-primary">Lista użytkowników</h6>
+        <h6 class="m-0 font-weight-bold text-primary">User list</h6>
       </div>
       <div class="card-body">
         <div class="table-responsive">
@@ -36,17 +42,17 @@
             <thead>
             <tr>
               <th>Id</th>
-              <th>Nazwa użytkownika</th>
-              <th>Email</th>
-              <th>Akcja</th>
+              <th>User name</th>
+              <th>User email</th>
+              <th>Action</th>
             </tr>
             <c:forEach items="${users}" var="user">
               <tr>
                 <td>${user.getId()}</td>
                 <td>${user.getUserName()}</td>
                 <td>${user.getEmail()}</td>
-                <td><a href="http://localhost:8080/user/delete?id=${user.getId()}">Usuń</a> <a href="http://localhost:8080/user/edit?id=${user.getId()}">Edytuj</a>
-                <a href="http://localhost:8080/user/show?id=${user.getId()}">Pokaż</a>
+                <td><a href="http://localhost:8080/user/delete?id=${user.getId()}">Delete</a> <a href="http://localhost:8080/user/edit?id=${user.getId()}">Edit</a>
+                <a href="http://localhost:8080/user/show?id=${user.getId()}">Show</a>
                 </td>
               </tr>
             </c:forEach>

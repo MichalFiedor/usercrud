@@ -24,12 +24,17 @@
 <body id="page-top">
 
   <%@include file="/jsp/header.jsp"%>
-
+  <!-- Page Heading -->
+  <div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h1 mb-0 text-gray-800">UsersCrud</h1>
+    <a href="http://localhost:8080/user/add" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+            class="fas fa-download fa-sm text-white-50"></i>Add user</a>
+  </div>
 
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
       <div class="card-header py-3">
-        <h6 class="m-0 font-weight-bold text-primary">Szczegóły użytkownika</h6>
+        <h6 class="m-0 font-weight-bold text-primary">Details</h6>
       </div>
       <div class="card-body">
         <div class="table-responsive">
@@ -40,11 +45,11 @@
                 <td>${user.getId()}</td>
               </tr>
               <tr>
-                <td>Nazwa użytkownika</td>
+                <td>User name</td>
                 <td>${user.getUserName()}</td>
               </tr>
               <tr>
-                <td>Email</td>
+                <td>User email</td>
                 <td>${user.getEmail()}</td>
               </tr>
             </thead>

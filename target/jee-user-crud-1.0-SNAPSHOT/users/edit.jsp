@@ -24,23 +24,28 @@
 <body id="page-top">
 
   <%@include file="/jsp/header.jsp"%>
-
+  <!-- Page Heading -->
+  <div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h1 mb-0 text-gray-800">UsersCrud</h1>
+    <a href="http://localhost:8080/user/add" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+            class="fas fa-download fa-sm text-white-50"></i>Add user</a>
+  </div>
 
   <form method="post" action="/user/edit">
     <div class="form-group">
-      <label for="name">Nazwa</label>
-      <input type="text" value="${user.getUserName()}" class="form-control" id="name" name="name" placeholder="Nazwa użytkownika">
+      <label for="name">User name</label>
+      <input type="text" value="${user.getUserName()}" class="form-control" id="name" name="name" placeholder="User name">
     </div>
     <div class="form-group">
-      <label for="email">Email</label>
-      <input type="text" value="${user.getEmail()}" class="form-control" id="email" name="email" placeholder="Email użytkownika">
+      <label for="email">User email</label>
+      <input type="text" value="${user.getEmail()}" class="form-control" id="email" name="email" placeholder="User email">
     </div>
     <div class="form-group">
-      <label for="password">Hasło</label>
-      <input type="password" class="form-control" id="password" name="password" placeholder="Hasło użytkownika">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" id="password" name="password" placeholder="User password">
     </div>
     <input type="hidden" name="id" value="${user.getId()}"/>
-    <button type="submit" class="btn btn-primary">Edytuj</button>
+    <button type="submit" class="btn btn-primary">Edit</button>
   </form>
   <%@include file="/jsp/footer.jsp"%>
 
